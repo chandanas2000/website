@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Services | STRATORYX GROWTH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Professional digital solutions and services by STRATORYX GROWTH">
+  <meta name="keywords" content="stratoryx, growth, services, digital solutions, web development">
+  <meta name="author" content="Chandana">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    :root {
+      --stratoryx-green: #2FB344;
+      --stratoryx-dark: #1D2B36;
+      --white: #FFFFFF;
+      --light-gray: #F5F5F5;
+      --medium-gray: #E0E0E0;
+      --dark-gray: #333333;
+    }
+    
+    body {
+      background-color: var(--white);
+      color: var(--dark-gray);
+    }
+
+    .services-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .services-header h1 {
+      color: var(--stratoryx-dark);
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .services-header p {
+      color: var(--dark-gray);
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--medium-gray);
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h2 {
+      color: var(--stratoryx-green);
+      margin-bottom: 20px;
+    }
+
+    .service-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .service-card li {
+      margin-bottom: 15px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .service-card li:before {
+      content: "✓";
+      color: var(--stratoryx-green);
+      position: absolute;
+      left: 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: var(--stratoryx-green);
+      color: var(--white);
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #28a03a;
+    }
+  </style>
+</head>
+<body>
+  <!-- Include navigation -->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+
+  <div class="services-container">
+    <div class="services-header">
+      <h1>Our Services</h1>
+      <p>Comprehensive digital solutions to help your business grow</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h2>E-commerce Development</h2>
+        <ul>
+          <li>Shopify Store Setup & Customization</li>
+          <li>WordPress & WooCommerce Integration</li>
+          <li>Payment Gateway Integration</li>
+          <li>Product Catalog Management</li>
+          <li>Mobile-Responsive Design</li>
+          <li>Checkout Optimization</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Digital Marketing</h2>
+        <ul>
+          <li>Meta Advertising Campaigns</li>
+          <li>LinkedIn Marketing Strategy</li>
+          <li>SEO Optimization</li>
+          <li>Content Marketing</li>
+          <li>Email Marketing</li>
+          <li>Social Media Management</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Analytics & Optimization</h2>
+        <ul>
+          <li>Google Analytics Implementation</li>
+          <li>Meta Pixel Setup</li>
+          <li>Conversion Tracking</li>
+          <li>Data Analysis & Reporting</li>
+          <li>Performance Optimization</li>
+          <li>ROI Tracking</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Web Development</h2>
+        <ul>
+          <li>Custom Website Development</li>
+          <li>Frontend Development</li>
+          <li>Responsive Design</li>
+          <li>Performance Optimization</li>
+          <li>Security Implementation</li>
+          <li>Maintenance & Support</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Content Strategy</h2>
+        <ul>
+          <li>Content Planning</li>
+          <li>Copywriting Services</li>
+          <li>Blog Management</li>
+          <li>SEO Content Creation</li>
+          <li>Social Media Content</li>
+          <li>Brand Messaging</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h2>Consulting</h2>
+        <ul>
+          <li>Digital Strategy Development</li>
+          <li>E-commerce Consulting</li>
+          <li>Marketing Strategy</li>
+          <li>Technical Consulting</li>
+          <li>Performance Analysis</li>
+          <li>Growth Planning</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="contact.html" class="cta-button">Get Started</a>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+</body>
+</html> 

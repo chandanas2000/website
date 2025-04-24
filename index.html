@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chandana | STRATORYX GROWTH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Portfolio of Chandana - Founder of STRATORYX GROWTH | Digital Solutions Expert">
+  <meta name="keywords" content="stratoryx, growth, chandana, shopify, wordpress, data analytics, digital marketing">
+  <meta name="author" content="Chandana">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    :root {
+      --stratoryx-green: #2FB344;
+      --stratoryx-dark: #1D2B36;
+      --white: #FFFFFF;
+      --light-gray: #F5F5F5;
+      --medium-gray: #E0E0E0;
+      --dark-gray: #333333;
+    }
+    
+    body {
+      background-color: var(--white);
+      color: var(--dark-gray);
+    }
+
+    .perspective {
+      background-color: var(--white);
+    }
+
+    .l-wrapper {
+      background-color: var(--white);
+    }
+
+    .l-section {
+      background-color: var(--white);
+      min-height: 100vh;
+      width: 100%;
+      display: block;
+    }
+
+    .l-section.section {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .header--logo p, .device-notification--logo p {
+      color: var(--dark-gray);
+      font-weight: 600;
+    }
+
+    .header--logo img, .device-notification--logo img {
+      max-width: 150px;
+      height: auto;
+    }
+
+    .cta {
+      background: var(--stratoryx-green);
+      color: var(--white);
+      border: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .cta:hover {
+      background: #28a03a;
+    }
+
+    .intro {
+      padding: 40px 80px;
+    }
+
+    .intro--banner {
+      padding: 40px 0;
+    }
+
+    .intro--banner h1 {
+      color: var(--dark-gray);
+      font-size: 4em;
+      line-height: 1.2;
+      margin-bottom: 30px;
+    }
+
+    .intro--banner .cta {
+      background: #0037ff;
+      padding: 15px 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .intro--banner .cta:hover {
+      background: #002cd4;
+    }
+
+    .intro--options {
+      padding-bottom: 60px;
+    }
+
+    .profile-section {
+      margin-top: 2em;
+      padding: 20px;
+      background: var(--light-gray);
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .profile-section h3 {
+      color: var(--dark-gray);
+      margin-bottom: 1em;
+    }
+
+    .work--lockup {
+      background: var(--white);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .slider--item {
+      background: var(--white);
+      border: 1px solid var(--medium-gray);
+    }
+
+    .slider--item-title {
+      color: var(--dark-gray);
+    }
+
+    .slider--item-description {
+      color: var(--dark-gray);
+    }
+
+    .about--options a {
+      background: var(--light-gray);
+      border: 1px solid var(--medium-gray);
+    }
+
+    .about--options a:hover {
+      background: var(--white);
+      border-color: var(--stratoryx-green);
+    }
+
+    .modal {
+      background: var(--white);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .modal--information {
+      border-bottom: 1px solid var(--medium-gray);
+    }
+
+    .modal--options li a {
+      color: var(--dark-gray);
+    }
+
+    .modal--options li a:hover {
+      color: var(--stratoryx-green);
+    }
+
+    .outer-nav li {
+      color: var(--dark-gray);
+    }
+
+    .outer-nav li.is-active {
+      color: var(--stratoryx-green);
+    }
+
+    .side-nav li span {
+      color: var(--dark-gray);
+    }
+
+    .side-nav li.is-active span {
+      color: var(--stratoryx-green);
+    }
+
+    .device-notification {
+      background: var(--white);
+      border: 1px solid var(--medium-gray);
+    }
+
+    .device-notification--message {
+      color: var(--dark-gray);
+    }
+
+    /* Navigation Links */
+    .nav-link {
+      color: var(--dark-gray);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--stratoryx-green);
+    }
+
+    /* Remove side navigation styles */
+    .l-side-nav,
+    .side-nav {
+      display: none;
+    }
+
+    .side-nav li span a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Remove number prefix from navigation */
+    .side-nav li span a,
+    .outer-nav li a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .side-nav li span a::before,
+    .outer-nav li a::before {
+      content: none;
+    }
+
+    .contact {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      position: relative;
+      display: block;
+    }
+
+    .contact::before {
+      content: "02";
+      position: absolute;
+      left: 0;
+      top: 40px;
+      color: #999;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .contact-header h1 {
+      font-size: 3.5em;
+      color: var(--stratoryx-dark);
+      margin-bottom: 20px;
+    }
+
+    .contact-header p {
+      font-size: 1.2em;
+      color: var(--dark-gray);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    .contact-info {
+      background: var(--light-gray);
+      padding: 40px;
+      border-radius: 12px;
+      height: fit-content;
+    }
+
+    .contact-info h2 {
+      color: var(--stratoryx-green);
+      font-size: 2em;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .contact-info p {
+      margin-bottom: 20px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .contact-info strong {
+      min-width: 100px;
+      color: var(--stratoryx-dark);
+      font-weight: 500;
+    }
+
+    .contact-form {
+      background: var(--white);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+
+    #contactForm {
+      display: block;
+      width: 100%;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+      display: block;
+      width: 100%;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--stratoryx-dark);
+      font-size: 1em;
+      font-weight: 500;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 1em;
+      background: #fff;
+      display: block;
+    }
+
+    .form-group textarea {
+      height: 150px;
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-button {
+      display: block;
+      width: 100%;
+      background: var(--stratoryx-green);
+      color: var(--white);
+      padding: 15px 40px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1em;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    .submit-button:hover {
+      background: #28a03a;
+    }
+
+    .l-main-content {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .l-section, .contact, .intro {
+        padding: 40px 40px 80px 40px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .l-section, .contact, .intro {
+        padding: 30px 20px 60px 20px;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .contact-info,
+      .contact-form {
+        padding: 30px;
+      }
+
+      .contact-info h2 {
+        font-size: 1.8em;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="index.html">
+    <img src="assets/img/ChatGPT_Image_Apr_22__2025__02_15_38_PM-removebg-preview.png" alt="STRATORYX GROWTH">
+    <p>STRATORYX GROWTH</p>
+  </a>
+  <p class="device-notification--message">Please rotate your device to portrait mode for the best experience.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="index.html">
+            <img src="assets/img/ChatGPT_Image_Apr_22__2025__02_15_38_PM-removebg-preview.png" alt="STRATORYX GROWTH">
+          </a>
+          <button class="header--cta cta" onclick="window.location.href='contact.html'">Connect</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Driving Digital Success<br>for Emerging Brands<br></h1>
+                <button class="cta" onclick="window.location.href='contact.html'">Let's Connect
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+              </div>
+              <div class="intro--options">
+                <a href="profile.html">
+                  <h3>About Me</h3>
+                  <p>Digital Solutions Expert with expertise in Shopify, WordPress, and Data Analytics</p>
+                </a>
+                <a href="services.html">
+                  <h3>My Company</h3>
+                  <p>Founder of STRATORYX GROWTH, delivering comprehensive digital growth solutions</p>
+                </a>
+                <a href="projects.html">
+                  <h3>Vision</h3>
+                  <p>Empowering businesses through data-driven digital transformation</p>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <nav class="l-side-nav">
+    <ul class="side-nav">
+      <li class="is-active"><span><a href="index.html" class="nav-link">Home</a></span></li>
+      <li><span><a href="contact.html" class="nav-link">Contact</a></span></li>
+    </ul>
+  </nav>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Projects | STRATORYX GROWTH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Project portfolio of STRATORYX GROWTH">
+  <meta name="keywords" content="stratoryx, growth, projects, portfolio, web development">
+  <meta name="author" content="Chandana">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    :root {
+      --stratoryx-green: #2FB344;
+      --stratoryx-dark: #1D2B36;
+      --white: #FFFFFF;
+      --light-gray: #F5F5F5;
+      --medium-gray: #E0E0E0;
+      --dark-gray: #333333;
+    }
+    
+    body {
+      background-color: var(--white);
+      color: var(--dark-gray);
+    }
+
+    .projects-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .projects-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .projects-header h1 {
+      color: var(--stratoryx-dark);
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .projects-header p {
+      color: var(--dark-gray);
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      color: var(--stratoryx-dark);
+      font-size: 2em;
+      margin: 60px 0 30px;
+      text-align: center;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      background: var(--white);
+      border: 1px solid var(--medium-gray);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h2 {
+      color: var(--stratoryx-green);
+      margin-bottom: 15px;
+    }
+
+    .project-content p {
+      color: var(--dark-gray);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .project-tag {
+      background: var(--light-gray);
+      color: var(--stratoryx-dark);
+      padding: 5px 10px;
+      border-radius: 15px;
+      font-size: 0.9em;
+    }
+
+    .project-link {
+      display: inline-block;
+      color: var(--stratoryx-green);
+      text-decoration: none;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: var(--stratoryx-green);
+      color: var(--white);
+      padding: 15px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #28a03a;
+    }
+  </style>
+</head>
+<body>
+  <!-- Include navigation -->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+
+  <div class="projects-container">
+    <div class="projects-header">
+      <h1>Our Projects</h1>
+      <p>Explore our portfolio of successful e-commerce and website solutions</p>
+    </div>
+
+    <!-- Shopify Projects Section -->
+    <h2 class="section-title">Shopify E-commerce Solutions</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/img/kokoon.jpg" alt="Kokoon E-commerce Store" class="project-image">
+        <div class="project-content">
+          <h2>Kokoon.in</h2>
+          <p>Premium silk products e-commerce store featuring anti-ageing pillowcases and scrunchies. Implemented custom product pages, collection layouts, and seamless checkout experience.</p>
+          <div class="project-tags">
+            <span class="project-tag">Shopify</span>
+            <span class="project-tag">E-commerce</span>
+            <span class="project-tag">Custom Theme</span>
+          </div>
+          <a href="https://kokoon.in/" class="project-link" target="_blank">Visit Website →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/ayodhyabooks.jpg" alt="Ayodhya Books Store" class="project-image">
+        <div class="project-content">
+          <h2>AyodhyaBooks.com</h2>
+          <p>Online bookstore specializing in cultural and educational books. Features advanced search functionality, category management, and secure payment integration.</p>
+          <div class="project-tags">
+            <span class="project-tag">Shopify</span>
+            <span class="project-tag">Book Store</span>
+            <span class="project-tag">Payment Integration</span>
+          </div>
+          <a href="https://www.ayodhyabooks.com/" class="project-link" target="_blank">Visit Website →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marketing & Tracking Implementation -->
+    <h2 class="section-title">Marketing & Tracking Implementation</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/img/meta-implementation.jpg" alt="Meta Marketing Setup" class="project-image">
+        <div class="project-content">
+          <h2>Meta Marketing Setup</h2>
+          <p>Implementation and configuration:
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>• Meta Pixel installation and setup</li>
+              <li>• Custom conversion tracking</li>
+              <li>• Audience targeting configuration</li>
+              <li>• Campaign structure setup</li>
+              <li>• Ad account optimization</li>
+            </ul>
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Meta Ads</span>
+            <span class="project-tag">Pixel Setup</span>
+            <span class="project-tag">Tracking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/linkedin-setup.jpg" alt="LinkedIn Marketing Setup" class="project-image">
+        <div class="project-content">
+          <h2>LinkedIn Marketing Setup</h2>
+          <p>Professional network implementation:
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>• LinkedIn Company Page setup</li>
+              <li>• Campaign structure implementation</li>
+              <li>• Lead form creation</li>
+              <li>• Audience targeting setup</li>
+              <li>• Conversion tracking configuration</li>
+            </ul>
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">LinkedIn Ads</span>
+            <span class="project-tag">Lead Generation</span>
+            <span class="project-tag">B2B Marketing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/website-tracking.jpg" alt="Website Tracking Setup" class="project-image">
+        <div class="project-content">
+          <h2>Website Visitor Tracking</h2>
+          <p>Implementation of tracking systems:
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>• Google Analytics 4 implementation</li>
+              <li>• Custom event tracking setup</li>
+              <li>• User behavior tracking</li>
+              <li>• Conversion tracking setup</li>
+              <li>• Custom dimension configuration</li>
+            </ul>
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Analytics</span>
+            <span class="project-tag">Tracking</span>
+            <span class="project-tag">Implementation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/seo-setup.jpg" alt="SEO Implementation" class="project-image">
+        <div class="project-content">
+          <h2>SEO Implementation</h2>
+          <p>Search engine optimization setup:
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>• Technical SEO implementation</li>
+              <li>• Meta tag optimization</li>
+              <li>• XML sitemap creation</li>
+              <li>• Search console setup</li>
+              <li>• Structured data implementation</li>
+            </ul>
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">SEO</span>
+            <span class="project-tag">Technical SEO</span>
+            <span class="project-tag">Implementation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics & Optimization Section -->
+    <h2 class="section-title">Analytics & Optimization</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/img/data-analysis.jpg" alt="Data Analysis Report" class="project-image">
+        <div class="project-content">
+          <h2>Comprehensive Data Analysis</h2>
+          <p>In-depth data analysis and reporting:
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>• Website traffic analysis and trends</li>
+              <li>• User behavior and engagement metrics</li>
+              <li>• Conversion funnel analysis</li>
+              <li>• Customer journey mapping</li>
+              <li>• Data visualization and reporting</li>
+            </ul>
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Data Analysis</span>
+            <span class="project-tag">Reporting</span>
+            <span class="project-tag">Visualization</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/marketing-analysis.jpg" alt="Marketing Analysis Report" class="project-image">
+        <div class="project-content">
+          <h2>Marketing Performance Analysis</h2>
+          <p>Detailed marketing analytics and insights:
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>• Campaign performance analysis</li>
+              <li>• ROI and cost analysis</li>
+              <li>• Audience segmentation analysis</li>
+              <li>• Channel performance comparison</li>
+              <li>• Marketing attribution modeling</li>
+            </ul>
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Marketing Analytics</span>
+            <span class="project-tag">Performance Analysis</span>
+            <span class="project-tag">ROI Tracking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/website-analysis.jpg" alt="Website Performance Report" class="project-image">
+        <div class="project-content">
+          <h2>Website Performance Analysis</h2>
+          <p>Technical and user experience analysis:
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>• Page load speed analysis</li>
+              <li>• User experience metrics</li>
+              <li>• Technical SEO analysis</li>
+              <li>• Mobile responsiveness analysis</li>
+              <li>• Error tracking and debugging</li>
+            </ul>
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Performance Analysis</span>
+            <span class="project-tag">Technical Analysis</span>
+            <span class="project-tag">UX Analysis</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/optimization-report.jpg" alt="Optimization Recommendations" class="project-image">
+        <div class="project-content">
+          <h2>Optimization Recommendations</h2>
+          <p>Actionable insights and improvements:
+            <ul style="list-style-type: none; padding-left: 0;">
+              <li>• Conversion rate optimization suggestions</li>
+              <li>• Marketing campaign optimizations</li>
+              <li>• Website performance improvements</li>
+              <li>• SEO optimization recommendations</li>
+              <li>• User experience enhancements</li>
+            </ul>
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">Optimization</span>
+            <span class="project-tag">Recommendations</span>
+            <span class="project-tag">Improvements</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WordPress Projects Section -->
+    <h2 class="section-title">WordPress Solutions</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/img/ayodhyafoundation.jpg" alt="Ayodhya Foundation Website" class="project-image">
+        <div class="project-content">
+          <h2>AyodhyaFoundation.in</h2>
+          <p>Non-profit organization website with donation functionality, event management, and content management system. Features custom forms and secure payment processing.</p>
+          <div class="project-tags">
+            <span class="project-tag">WordPress</span>
+            <span class="project-tag">Non-profit</span>
+            <span class="project-tag">Donation System</span>
+          </div>
+          <a href="http://ayodhyafoundation.in/" class="project-link" target="_blank">Visit Website →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/img/ayodhyachamps.jpg" alt="Ayodhya Champs Website" class="project-image">
+        <div class="project-content">
+          <h2>AyodhyaChamps.com</h2>
+          <p>Educational platform with custom course management, student registration, and content delivery system. Implemented responsive design and user-friendly navigation.</p>
+          <div class="project-tags">
+            <span class="project-tag">WordPress</span>
+            <span class="project-tag">Education</span>
+            <span class="project-tag">Custom CMS</span>
+          </div>
+          <a href="https://ayodhyachamps.com/" class="project-link" target="_blank">Visit Website →</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="contact.html" class="cta-button">Start Your Project</a>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+</body>
+</html> 

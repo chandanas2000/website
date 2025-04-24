@@ -1,0 +1,66 @@
+<nav class="main-nav">
+  <div class="nav-container">
+    <a href="index.html" class="logo">STRATORYX GROWTH</a>
+    <div class="nav-links">
+      <a href="profile.html">Profile</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .main-nav {
+    background-color: var(--stratoryx-dark);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: var(--white);
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: var(--stratoryx-green);
+  }
+
+  @media (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  }
+</style> 
